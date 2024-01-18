@@ -4,7 +4,7 @@ import { playerContext } from '../../contexts/playerContext/PlayerContext'
 
 const PlayerControl = () => {
     const { currentPlay, setCurrentPlay } = useContext(playerContext)
-    console.log(currentPlay)
+
     const [audio] = useState(new Audio(currentPlay.chapterData[0].chapterUrl));
     const [isPlaying, setIsPlaying] = useState(true);
     const [currentTime, setCurrentTime] = useState(0);

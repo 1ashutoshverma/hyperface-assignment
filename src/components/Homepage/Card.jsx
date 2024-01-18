@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import { playerContext } from '../../contexts/playerContext/PlayerContext'
 const Card = ({ data }) => {
     const navigate = useNavigate()
-
     const { setCurrentPlay } = useContext(playerContext)
+
     const handleClick = (e) => {
         setCurrentPlay(e);
         navigate("/player")
@@ -26,7 +26,6 @@ const Card = ({ data }) => {
                     })
                 }
             </div>
-
         </div>
     )
 }

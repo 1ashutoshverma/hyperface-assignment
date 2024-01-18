@@ -1,11 +1,12 @@
+#header {
+  padding: 15px;
+}
 #header > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#header {
-  padding: 15px;
-}
+
 #header img {
   width: 40px;
   height: 40px;

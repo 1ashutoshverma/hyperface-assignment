@@ -104,7 +104,7 @@ export const courses = {
 };
 export const article = {
   heading: "Article Reads",
-  desc: "Listen to Audio version of top web auticles",
+  desc: "Listen to Audio version of top web articles",
   cardData: [
     {
       img: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWRpZW50fGVufDB8fDB8fHww",

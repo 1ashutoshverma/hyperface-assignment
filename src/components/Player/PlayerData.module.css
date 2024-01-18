@@ -6,12 +6,10 @@
   margin: auto;
 }
 #wrapper > div > div:first-child {
-  /* width: 350px; */
   margin: auto;
   margin-top: 30px;
 }
 #wrapper > div > div:nth-child(2) {
-  /* width: 350px; */
   margin: auto;
   margin-top: 10px;
   display: flex;
@@ -39,6 +37,7 @@
   padding: 5px 15px;
   border-radius: 5px;
   margin: 5px;
+  text-align: center;
 }
 
 @media screen and (width<650px) {

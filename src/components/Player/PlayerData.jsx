@@ -3,7 +3,7 @@ import styles from "./PlayerData.module.css"
 import { playerContext } from '../../contexts/playerContext/PlayerContext'
 
 const PlayerData = () => {
-    const { currentPlay, setCurrentPlay } = useContext(playerContext)
+    const { currentPlay } = useContext(playerContext)
 
     return (
         <div id={styles.wrapper}>
@@ -13,7 +13,9 @@ const PlayerData = () => {
                 </div>
                 <div>
                     <h1>{currentPlay.heading}</h1>
-                    <p>Chapter 1 - {currentPlay.chapterData[0].chapterName}</p>
+                    {/* We need more data to create this dynamic */}
+                    <p>Chapter 1 - {currentPlay.chapterData[0].chapterName}
+                    </p>
                     <div>
                         <p className={styles.view}>View Chapter Notes</p>
                         <p className={styles.view}>Attempt Quiz</p>
