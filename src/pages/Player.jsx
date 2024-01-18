@@ -6,9 +6,12 @@ import styles from "./Player.module.css"
 const Player = () => {
     return (
         <div id={styles.player}>
-            <Top />
-            <PlayerData />
-            <PlayerControl />
+            <div>
+                <Top />
+                <PlayerData />
+                <PlayerControl />
+            </div>
+
         </div>
     )
 }
