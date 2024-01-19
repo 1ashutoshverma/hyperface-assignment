@@ -7,7 +7,7 @@ const PlayerControl = () => {
     const { currentPlay, setCurrentPlay } = useContext(playerContext)
     //Link was stop working suddenly that is why I have added the file to showcase
     // const [audio] = useState(new Audio(currentPlay.chapterData[0].chapterUrl));
-    const [audio] = useState(new Audio("/public/file_example_MP3_700KB.mp3"));
+    const [audio] = useState(new Audio("/file_example_MP3_700KB.mp3"));
     const [isPlaying, setIsPlaying] = useState(true);
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
