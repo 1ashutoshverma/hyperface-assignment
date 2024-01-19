@@ -2,10 +2,12 @@ import React, { useContext, useEffect, useState } from 'react'
 import styles from "./PlayerControl.module.css"
 import { playerContext } from '../../contexts/playerContext/PlayerContext'
 
+
 const PlayerControl = () => {
     const { currentPlay, setCurrentPlay } = useContext(playerContext)
-
-    const [audio] = useState(new Audio(currentPlay.chapterData[0].chapterUrl));
+    //Link was stop working suddenly that is why I have added the file to showcase
+    // const [audio] = useState(new Audio(currentPlay.chapterData[0].chapterUrl));
+    const [audio] = useState(new Audio("/public/file_example_MP3_700KB.mp3"));
     const [isPlaying, setIsPlaying] = useState(true);
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
@@ -29,6 +31,8 @@ const PlayerControl = () => {
             audio.removeEventListener('ended', () => { });
         };
     }, [audio]);
+
+    //to play hen window open for the first time
     useEffect(() => {
         audio.play();
     }, [])
